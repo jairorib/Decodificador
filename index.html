@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Decodificador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <img class="logo" src="assets/logo.png" alt="Logo do Site">
+      <section class="painel__funcao">
+        <div class="painel__funcao__texto">
+         <input type="text" class="mensagem" placeholder="Digite o texto aqui">
+        </div>
+        <div class="form-group">
+        <img src="assets/alert.png" class="texto-aviso" alt="simbolo de alerta">
+        <p>Apenas letras minusculas e sem acento</p>
+        </div>
+        <div class="painel__funcao__botao">       
+       <button onclick="criptografar()" class="botao__cifra">Criptografar</button>
+       <button onclick="descriptografar()">Descriptografar</button>
+       </div>
+      </section>
+       <section class="apresentacao">
+         <div class="apresentacao__centraliza">
+         <div class="apresentacao__introducao">
+           <img class="apresentacao__introducao__imagem" src="assets/High-quality-products-1-1.jpg" alt="imagem">
+          <h1>Nenhuma mensagem encontrada</h1>
+          <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+         </div>
+         </div>
+         <textarea class="apresentacao__retorno"></textarea>
+         <div >
+         <button class="btn-copy" onclick="copiar()" style="display:none">copiar</button>
+         </div>
+       </section>
+    </main>
+    <footer class="rodape">
+      Jairo, 2024
+    </footer>
+    <script src="app.js">
+  </body>
+</html>
